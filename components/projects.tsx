@@ -23,7 +23,11 @@ export default function Projects() {
       title: "SpaceX Informative Website",
       shortDescription: "An informative web page about SpaceX and space tourism.",
       description: "A collaborative project creating an informative website about SpaceX and space tourism.",
+<<<<<<< HEAD
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/space.jpg-aTmuuUxwHRC1Dp86xPnyf64sd91JWT.jpeg",
+=======
+      image: "/placeholder.svg?height=400&width=600",
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
       tags: ["JavaScript", "CSS", "HTML", "Web Development"],
       features: [
         "Interactive UI",
@@ -39,6 +43,7 @@ export default function Projects() {
     },
     {
       id: 1,
+<<<<<<< HEAD
       title: "Viajes Por Colombia",
       shortDescription: "A tourism website showcasing Colombian cities and attractions.",
       description:
@@ -76,6 +81,31 @@ export default function Projects() {
       githubLink: "https://github.com/osman019/proyecto",
       fullDescription:
         "This is a management system for medical centers developed in Python, utilizing modularity and CRUD operations (Create, Read, Update, Delete). It allows administrators to manage patients and medical specialists efficiently. The application features a modular design for maintaining clean and scalable code, with data storage in JSON format. The system is designed to be user-friendly while providing robust functionality for medical center administration.",
+=======
+      title: "Project Placeholder 1",
+      shortDescription: "Add your project details here.",
+      description: "This is a placeholder for your future project.",
+      image: "/placeholder.svg?height=400&width=600",
+      tags: ["Add", "Your", "Technologies", "Here"],
+      features: ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"],
+      demoLink: "#",
+      githubLink: "#",
+      fullDescription:
+        "This is a placeholder for your future project. You can add a detailed description of your project here, including its purpose, technologies used, challenges faced, and solutions implemented.",
+    },
+    {
+      id: 2,
+      title: "Project Placeholder 2",
+      shortDescription: "Add your project details here.",
+      description: "This is a placeholder for your future project.",
+      image: "/placeholder.svg?height=400&width=600",
+      tags: ["Add", "Your", "Technologies", "Here"],
+      features: ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"],
+      demoLink: "#",
+      githubLink: "#",
+      fullDescription:
+        "This is a placeholder for your future project. You can add a detailed description of your project here, including its purpose, technologies used, challenges faced, and solutions implemented.",
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
     },
   ]
 

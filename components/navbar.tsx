@@ -35,7 +35,11 @@ export default function Navbar() {
     { name: "About", href: "about" },
     { name: "Tech Stack", href: "tech-stack" },
     { name: "Projects", href: "projects" },
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
     { name: "Contact", href: "contact" },
   ]
 
@@ -48,7 +52,11 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+<<<<<<< HEAD
           <button onClick={() => scrollToSection("home")} className="text-2xl font-bold text-white">
+=======
+          <button onClick={() => scrollToSection("home")} className="text-2xl font-bold text-primary">
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
             Osman <span className="text-destructive">Johandry</span>
           </button>
 

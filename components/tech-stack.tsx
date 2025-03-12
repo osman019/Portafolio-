@@ -34,7 +34,11 @@ export default function TechStack() {
       icon: <Server className="h-6 w-6" />,
       title: "Backend Development",
       description: "Server-side frameworks and technologies",
+<<<<<<< HEAD
       skills: [{ name: "Spring Boot", level: 0 }],
+=======
+      skills: [{ name: "Spring Boot", level: 85 }],
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
     },
     database: {
       icon: <Database className="h-6 w-6" />,

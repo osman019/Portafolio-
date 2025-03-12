@@ -2,13 +2,20 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
+<<<<<<< HEAD
 import { ArrowRight, Github, Linkedin, Twitter, User } from "lucide-react"
+=======
+import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react"
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
 import { motion } from "framer-motion"
 
 export default function Hero() {
   const [text, setText] = useState("")
   const fullText = "Software Developer"
+<<<<<<< HEAD
   const [imageLoaded, setImageLoaded] = useState(false)
+=======
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
 
   useEffect(() => {
     let i = 0
@@ -21,6 +28,7 @@ export default function Hero() {
       }
     }, 100)
 
+<<<<<<< HEAD
     // Preload the image
     const img = new Image()
     img.src =
@@ -28,6 +36,8 @@ export default function Hero() {
     img.onload = () => setImageLoaded(true)
     img.onerror = () => setImageLoaded(false)
 
+=======
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
     return () => clearInterval(typingInterval)
   }, [])
 
@@ -48,7 +58,11 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
+<<<<<<< HEAD
               Hi, I'm <span className="text-white">Osman Johandry</span>
+=======
+              Hi, I'm <span className="text-primary">Osman Johandry</span>
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">
               <span className="text-foreground">{text}</span>
@@ -71,16 +85,24 @@ export default function Hero() {
 
             <div className="flex gap-4 mt-8">
               <Button variant="ghost" size="icon" className="rounded-full" asChild>
+<<<<<<< HEAD
                 <a href="https://github.com/osman019" target="_blank" rel="noopener noreferrer">
+=======
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="rounded-full" asChild>
+<<<<<<< HEAD
                 <a
                   href="https://www.linkedin.com/in/osman-ortiz-rolon-08a142353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+=======
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
@@ -99,6 +121,7 @@ export default function Hero() {
             className="relative aspect-square max-w-md mx-auto"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full"></div>
+<<<<<<< HEAD
             <div className="absolute inset-4 bg-muted rounded-full overflow-hidden flex items-center justify-center">
               {imageLoaded ? (
                 <div
@@ -114,6 +137,14 @@ export default function Hero() {
                   <p className="text-xl font-bold mt-2 text-primary/70">OJ</p>
                 </div>
               )}
+=======
+            <div className="absolute inset-4 bg-muted rounded-full overflow-hidden">
+              <img
+                src="/placeholder.svg?height=400&width=400"
+                alt="Osman Johandry"
+                className="w-full h-full object-cover"
+              />
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
             </div>
           </motion.div>
         </div>

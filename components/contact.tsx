@@ -191,11 +191,15 @@ export default function Contact() {
                   <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
                   <div className="flex gap-4">
                     <Button variant="outline" size="icon" className="rounded-full" asChild>
+<<<<<<< HEAD
                       <a
                         href="https://www.linkedin.com/in/osman-ortiz-rolon-08a142353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
+=======
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
                         <Linkedin className="h-5 w-5" />
                       </a>
                     </Button>

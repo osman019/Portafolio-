@@ -9,7 +9,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Osman Johandry | Portfolio",
   description: "Professional portfolio of Osman Johandry - Software Developer",
+<<<<<<< HEAD
   generator: "v0.dev",
+=======
+    generator: 'v0.dev'
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
 }
 
 export default function RootLayout({
@@ -26,8 +30,11 @@ export default function RootLayout({
   )
 }
 
+<<<<<<< HEAD
 import "./globals.css"
 
+=======
+>>>>>>> 259c63f05b1927fb7ae608c89267cf9e972086b8
 
 
 import './globals.css'
