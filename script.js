@@ -1,33 +1,33 @@
-// Declare lucide variable
+
 const lucide = window.lucide
 
-// Initialize Lucide icons
+
 document.addEventListener("DOMContentLoaded", () => {
   lucide.createIcons()
 
-  // Set current year in footer
+  
   document.getElementById("current-year").textContent = new Date().getFullYear()
 
-  // Initialize typing effect
+
   initTypingEffect()
 
-  // Initialize project cards
+ 
   initProjectCards()
 
-  // Initialize tech cards
+
   initTechCards()
 
-  // Initialize contact form
+
   initContactForm()
 
-  // Initialize language toggle
+  
   initLanguageToggle()
 
-  // Load profile image
+ 
   loadProfileImage()
 })
 
-// Load profile image
+
 function loadProfileImage() {
   const img = new Image()
   img.src =

@@ -57,6 +57,10 @@ body {
   line-height: 1.6;
 }
 
+.foto_osman{
+  width: 15%;
+  height: 15%;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -66,7 +70,7 @@ body {
 
 /* CLASE PARA TEXTO BLANCO */
 .text-white {
-  color: white !important;
+  color: rgba(247, 247, 247, 0.7) !important;
 }
 
 /* Typography */
@@ -105,7 +109,7 @@ p {
 }
 
 a {
-  color: var(--primary);
+  color: white var(--primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
