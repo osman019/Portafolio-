@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osman Johandry | Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark">
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <!-- AQUÍ "Johandry" ES BLANCO -->
+        <button class="logo" onclick="scrollToSection('home')">
+          <span>Osman</span> <span class="text-white">Johandry</span>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <!-- MENÚ EN ESPAÑOL -->
+          <button onclick="scrollToSection('home')">Inicio</button>
+          <button onclick="scrollToSection('about')">Sobre Mí</button>
+          <button onclick="scrollToSection('tech-stack')">Tecnologías</button>
+          <button onclick="scrollToSection('projects')">Proyectos</button>
+          <button onclick="scrollToSection('contact')">Contacto</button>
+          <button class="btn btn-primary">Currículum</button>
+          <!-- BOTÓN DE CAMBIO DE IDIOMA -->
+          <button id="language-toggle" class="btn btn-outline">EN</button>
+        </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-toggle" onclick="toggleMobileMenu()">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container">
+        <nav class="mobile-nav">
+          <!-- MENÚ MÓVIL EN ESPAÑOL -->
+          <button onclick="scrollToSection('home')">Inicio</button>
+          <button onclick="scrollToSection('about')">Sobre Mí</button>
+          <button onclick="scrollToSection('tech-stack')">Tecnologías</button>
+          <button onclick="scrollToSection('projects')">Proyectos</button>
+          <button onclick="scrollToSection('contact')">Contacto</button>
+          <button class="btn btn-primary w-full">Currículum</button>
+          <!-- BOTÓN MÓVIL DE CAMBIO DE IDIOMA -->
+          <button id="mobile-language-toggle" class="btn btn-outline w-full">EN</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <!-- CONTENIDO EN ESPAÑOL -->
+            <h1>Hola, soy <span>Osman <span class="text-white">Johandry</span></span></h1>
+            <h2><span id="typing-text">Desarrollador de Software</span><span class="cursor">|</span></h2>
+            <p>Construyo experiencias digitales excepcionales con código limpio y tecnologías modernas. Convertir problemas complejos en soluciones elegantes es lo que mejor hago.</p>
+
+            <div class="hero-buttons">
+              <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                Ver Mi Trabajo
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                Contáctame
+              </button>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/osman019" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/osman-ortiz-rolon-08a142353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <i data-lucide="twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="image-container">
+              <div class="profile-image">
+                <!-- IMAGEN DE PERFIL -->
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250311-WA0002.jpg-GYwvv2u6VLFyGYaUpvVICqff53WQwl.jpeg" alt="Osman Johandry" class="profile-img">
+                <div class="profile-fallback">
+                  <i data-lucide="user"></i>
+                  <p>OJ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <button onclick="scrollToSection('about')">
+          <i data-lucide="arrow-right" class="rotate-90"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <!-- SECCIÓN SOBRE MÍ EN ESPAÑOL -->
+          <span class="badge">Sobre Mí</span>
+          <h2>Quién Soy</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Un Desarrollador Apasionado</h3>
+            <p>Soy un programador con conocimientos en Python, JavaScript, Java y HTML con una gran pasión por este fascinante mundo de la tecnología. Mi trayectoria en el desarrollo de software ha sido impulsada por la curiosidad y el deseo de crear soluciones que marquen la diferencia.</p>
+            <p>A lo largo de mi carrera, he abrazado los desafíos de aprender nuevas tecnologías y frameworks, ampliando constantemente mi conjunto de habilidades para mantenerme a la vanguardia de las prácticas de desarrollo. Creo en escribir código limpio y eficiente que no solo funcione bien, sino que también sea mantenible y escalable.</p>
+            <p>Cuando no estoy programando, disfruto explorando nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo mis conocimientos con la comunidad de desarrolladores. Estoy particularmente interesado en el desarrollo web, análisis de datos y la creación de experiencias de usuario intuitivas que resuelvan problemas del mundo real.</p>
+          </div>
+
+          <div class="about-cards">
+            <div class="card">
+              <div class="card-icon">
+                <i data-lucide="code-2"></i>
+              </div>
+              <div class="card-content">
+                <h4>Código Limpio</h4>
+                <p>Escribo código mantenible, escalable y eficiente siguiendo las mejores prácticas y estándares de la industria.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">
+                <i data-lucide="lightbulb"></i>
+              </div>
+              <div class="card-content">
+                <h4>Solucionador de Problemas</h4>
+                <p>Disfruto abordando desafíos complejos y encontrando soluciones elegantes a través del pensamiento creativo.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">
+                <i data-lucide="rocket"></i>
+              </div>
+              <div class="card-content">
+                <h4>Aprendizaje Rápido</h4>
+                <p>Me adapto rápidamente a nuevas tecnologías y entornos, ampliando constantemente mi conjunto de habilidades.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+      <div class="container">
+        <div class="section-header">
+          <!-- SECCIÓN TECNOLOGÍAS EN ESPAÑOL -->
+          <span class="badge">Habilidades</span>
+          <h2>Experiencia Técnica</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card" data-category="languages">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i data-lucide="code-2"></i>
+              </div>
+              <div>
+                <h3>Lenguajes de Programación</h3>
+                <p>Lenguajes principales para desarrollo de sistemas y aplicaciones</p>
+              </div>
+            </div>
+
+            <div id="languages-details" class="tech-details">
+              <div class="skill">
+                <div class="skill-header">
+                  <span>Java</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-header">
+                  <span>JavaScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-header">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-badges">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Python</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="frontend">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i data-lucide="layout"></i>
+              </div>
+              <div>
+                <h3>Desarrollo Frontend</h3>
+                <p>Tecnologías modernas de desarrollo web</p>
+              </div>
+            </div>
+
+            <div id="frontend-details" class="tech-details">
+              <div class="skill">
+                <div class="skill-header">
+                  <span>HTML</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-header">
+                  <span>CSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-header">
+                  <span>JavaScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-badges">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="backend">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i data-lucide="server"></i>
+              </div>
+              <div>
+                <h3>Desarrollo Backend</h3>
+                <p>Frameworks y tecnologías del lado del servidor</p>
+              </div>
+            </div>
+
+            <div id="backend-details" class="tech-details">
+              <div class="skill">
+                <div class="skill-header">
+                  <span>Spring Boot</span>
+                  <span>0%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-badges">
+              <span class="tech-badge">Spring Boot</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="database">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i data-lucide="database"></i>
+              </div>
+              <div>
+                <h3>Sistemas de Base de Datos</h3>
+                <p>Gestión y optimización de bases de datos</p>
+              </div>
+            </div>
+
+            <div id="database-details" class="tech-details">
+              <div class="skill">
+                <div class="skill-header">
+                  <span>MySQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-badges">
+              <span class="tech-badge">MySQL</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-category="tools">
+            <div class="tech-header">
+              <div class="tech-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+              <div>
+                <h3>Herramientas de Desarrollo</h3>
+                <p>Herramientas y entornos para desarrollo</p>
+              </div>
+            </div>
+
+            <div id="tools-details" class="tech-details">
+              <div class="skill">
+                <div class="skill-header">
+                  <span>Git</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-badges">
+              <span class="tech-badge">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="tech-footer">Con experiencia tanto en desarrollo frontend como backend, aporto una comprensión integral de los principios de ingeniería de software a cada proyecto.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <!-- SECCIÓN PROYECTOS EN ESPAÑOL -->
+          <span class="badge">Portafolio</span>
+          <h2>Proyectos Destacados</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-id="0">
+            <div class="project-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/space.jpg-aTmuuUxwHRC1Dp86xPnyf64sd91JWT.jpeg" alt="SpaceX Informative Website">
+              <div class="project-overlay">
+                <h3>Sitio Web Informativo de SpaceX</h3>
+                <p>Una página web informativa sobre SpaceX y el turismo espacial.</p>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">Desarrollo Web</span>
+              </div>
+
+              <div class="project-features">
+                <h4>Características Principales:</h4>
+                <ul>
+                  <li>Interfaz de usuario interactiva</li>
+                  <li>Información de la compañía SpaceX</li>
+                  <li>Exhibición de cápsulas espaciales</li>
+                  <li>Especificaciones de cohetes</li>
+                  <li>Servicios de turismo espacial</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/osman019/PROYECTO-FILTRO_JS_ORTIZOSMAN-NILSONCARVAJAL.git" target="_blank" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  Código
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">
+                  <i data-lucide="external-link"></i>
+                  Demo
+                </a>
+                <button class="btn btn-outline btn-sm" onclick="showProjectModal(0)">
+                  Más Información
+                </button>
+              </div>
+            </div>
+
+            <div class="project-toggle">
+              <i data-lucide="chevron-down"></i>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-id="1">
+            <div class="project-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/JFRZQ4JICREXZCO4GQPC36LMSQ.jpg-qSJ7iGvieRcgrZ5jjNI8N59vAm6Fdc.jpeg" alt="Viajes Por Colombia">
+              <div class="project-overlay">
+                <h3>Viajes Por Colombia</h3>
+                <p>Un sitio web de turismo que muestra ciudades y atracciones colombianas.</p>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Turismo</span>
+                <span class="project-tag">Desarrollo Web</span>
+              </div>
+
+              <div class="project-features">
+                <h4>Características Principales:</h4>
+                <ul>
+                  <li>Guía interactiva de ciudades</li>
+                  <li>Lugares turísticos de Colombia</li>
+                  <li>Información gastronómica</li>
+                  <li>Detalles e información de ciudades</li>
+                  <li>Diseño responsivo</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/osman019/turismo-colombia" target="_blank" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  Código
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">
+                  <i data-lucide="external-link"></i>
+                  Demo
+                </a>
+                <button class="btn btn-outline btn-sm" onclick="showProjectModal(1)">
+                  Más Información
+                </button>
+              </div>
+            </div>
+
+            <div class="project-toggle">
+              <i data-lucide="chevron-down"></i>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-id="2">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=400&width=600" alt="Centro Médico - Sistema de Gestión">
+              <div class="project-overlay">
+                <h3>Centro Médico - Sistema de Gestión</h3>
+                <p>Un sistema de gestión de centros médicos construido con Python.</p>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">CRUD</span>
+                <span class="project-tag">JSON</span>
+                <span class="project-tag">Aplicación de Escritorio</span>
+              </div>
+
+              <div class="project-features">
+                <h4>Características Principales:</h4>
+                <ul>
+                  <li>Gestión de pacientes</li>
+                  <li>Gestión de especialistas médicos</li>
+                  <li>Arquitectura modular</li>
+                  <li>Almacenamiento de datos en JSON</li>
+                  <li>Código limpio y escalable</li>
+                </ul>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/osman019/proyecto" target="_blank" class="btn btn-outline btn-sm">
+                  <i data-lucide="github"></i>
+                  Código
+                </a>
+                <a href="#" class="btn btn-primary btn-sm">
+                  <i data-lucide="external-link"></i>
+                  Demo
+                </a>
+                <button class="btn btn-outline btn-sm" onclick="showProjectModal(2)">
+                  Más Información
+                </button>
+              </div>
+            </div>
+
+            <div class="project-toggle">
+              <i data-lucide="chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 id="modal-title"></h3>
+            <div id="modal-tags" class="modal-tags"></div>
+          </div>
+          <div class="modal-body">
+            <img id="modal-image" src="/placeholder.svg" alt="" class="modal-image">
+            <p id="modal-description"></p>
+            <div class="modal-features">
+              <h4>Características Principales:</h4>
+              <ul id="modal-features"></ul>
+            </div>
+            <div class="modal-actions">
+              <a id="modal-github" href="#" target="_blank" class="btn btn-outline">
+                <i data-lucide="github"></i>
+                Ver Código
+              </a>
+              <a id="modal-demo" href="#" target="_blank" class="btn btn-primary">
+                <i data-lucide="external-link"></i>
+                Demo en Vivo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <!-- SECCIÓN CONTACTO EN ESPAÑOL -->
+          <span class="badge">Contacto</span>
+          <h2>Ponte en Contacto</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Tu Nombre</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Tu Email</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Consulta de Proyecto" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Me gustaría discutir un proyecto..." rows="6" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:osmanortizrolon@gmail.com">osmanortizrolon@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div>
+                <h4>Teléfono</h4>
+                <a href="tel:+573222167943">+57 322 216 7943</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Tibú, Norte de Santander, Colombia</p>
+              </div>
+            </div>
+
+            <div class="social-card">
+              <h4>Sígueme</h4>
+              <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/osman-ortiz-rolon-08a142353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-button">
+                  <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-button">
+                  <i data-lucide="twitter"></i>
+                </a>
+                <a href="https://github.com/osman019" target="_blank" class="social-button">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <!-- AQUÍ "Johandry" ES BLANCO EN EL FOOTER -->
+          <p><span>Osman</span> <span class="text-white">Johandry</span></p>
+        </div>
+        <div class="footer-copyright">
+          <p>© <span id="current-year"></span> Osman Johandry. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
