@@ -396,6 +396,7 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: blur(0.4vw);
 }
 
 .profile-fallback {
@@ -592,6 +593,16 @@ section {
   gap: 0.5rem;
   margin-top: 1rem;
 }
+.soft-skills{
+  background-color: var(--card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
 
 .tech-badge {
   display: inline-block;
